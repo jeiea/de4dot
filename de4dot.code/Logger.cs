@@ -55,6 +55,8 @@ namespace de4dot.code {
 
 		public int NumIgnoredMessages => numIgnoredMessages;
 
+		public bool ForcePDBGeneration { get; set; } = false;
+
 		public Logger() : this(2, true) { }
 
 		public Logger(int indentSize, bool canIgnoreMessages) {
